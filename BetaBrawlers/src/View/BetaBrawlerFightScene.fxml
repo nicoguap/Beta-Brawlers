@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="pane" fx:controller="Cont.BetaBrawlerFightScene" onKeyPressed="#playerKeyPressed" onKeyReleased="#playerKeyReleased"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdb79e" height="800.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <bottom>
+            <HBox alignment="TOP_CENTER" prefHeight="91.0" prefWidth="1200.0" spacing="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="157.0" prefWidth="78.0">
+                     <children>
+                        <Label text="Health:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="health" text="100/100" />
+                     </children>
+                  </VBox>
+                  <Rectangle fx:id="playerHealth" arcHeight="5.0" arcWidth="5.0" fill="#ff1e1e" height="35.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+                  <VBox alignment="TOP_RIGHT" prefHeight="157.0" prefWidth="70.0">
+                     <children>
+                        <Label text="Shield:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="0/0" />
+                     </children>
+                  </VBox>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="35.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+                  <VBox prefHeight="157.0" prefWidth="240.0">
+                     <children>
+                        <HBox prefHeight="37.0" prefWidth="240.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="284.0" text="Bullets remaining:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="21.0" prefWidth="206.0" text="∞/∞">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="21.0" prefWidth="137.0" text="">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <Pane  fx:id="playerPane" onMouseClicked="#playerMousePressed" maxHeight="-Infinity" prefHeight="688.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle fx:id="player1Rect"  arcHeight="5.0" arcWidth="5.0" fill="#F5DEB3" height="40.0" layoutX="199.0" layoutY="594.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                  <Rectangle fx:id="player2Rect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="954.0" layoutY="545.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                  <Rectangle fx:id="player3Rect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="144.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                  <Rectangle fx:id="player4Rect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="992.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+
+
+                  <Rectangle fx:id="Rect1" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="688.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+                  <Rectangle fx:id="Rect2" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="688.0" layoutX="1109.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+                  <Rectangle fx:id="Rect3" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="91.0" layoutY="636.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+                  <Rectangle fx:id="Rect4" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="914.0" layoutY="586.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+                  <Rectangle fx:id="Rect5" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="91.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+                  <Rectangle fx:id="Rect6" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="914.0" layoutY="149.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+                  <Rectangle fx:id="Rect7" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="312.0" layoutY="586.0" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+                  <Rectangle fx:id="Rect8" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="91.0" layoutY="570.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+                  <Rectangle fx:id="Rect9" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="91.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="48.0" />
+                  <Rectangle fx:id="Rect10" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="219.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect11" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="197.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="92.0" />
+                  <Rectangle fx:id="Rect12" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="808.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+                  <Rectangle fx:id="Rect13" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="645.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                  <Rectangle fx:id="Rect14" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="520.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="88.0" />
+                  <Rectangle fx:id="Rect15" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="144.0" layoutY="260.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect16" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="89.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect17" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="258.0" layoutY="328.0" stroke="BLACK" strokeType="INSIDE" width="109.0" />
+                  <Rectangle fx:id="Rect18"  arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="608.0" layoutY="336.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect19" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="815.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect20" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="329.0" layoutY="141.0" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                  <Rectangle fx:id="Rect21" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="713.0" layoutY="260.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect22" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="1031.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+                  <Rectangle fx:id="Rect23" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="748.0" layoutY="385.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect24" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="1019.0" layoutY="354.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect25" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="884.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect26" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="546.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect27" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="1019.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect28" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="489.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+                  <Rectangle fx:id="Rect29" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="453.0" layoutY="344.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="Rect30" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="329.0" layoutY="409.0" stroke="BLACK" strokeType="INSIDE" width="109.0" />
+                  <Rectangle fx:id="Rect31" arcHeight="5.0" arcWidth="5.0" fill="#4d372a" height="16.0" layoutX="204.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

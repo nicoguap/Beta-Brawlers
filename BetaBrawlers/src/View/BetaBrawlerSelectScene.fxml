@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox fx:controller="Cont.BetaBrawlerSelectScene" fx:id="hbox1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdb79e" height="800.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+               <children>
+                  <VBox alignment="CENTER"  prefHeight="800.0" prefWidth="400.0" spacing="40.0">
+                     <children>
+                        <Label text="&quot;Second Chance&quot;">
+                           <font>
+                              <Font name="System Bold Italic" size="44.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/potion1.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="NOT AVAILABLE YET">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label text="">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" onMouseClicked="#selectSceneHStart" prefHeight="800.0" prefWidth="400.0" spacing="40.0">
+                     <children>
+                        <Label text="&quot;Head Start&quot;">
+                           <font>
+                              <Font name="System Bold Italic" size="44.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/potion2.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="You will start the game with a pistol." textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="Click to choose">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER"  prefHeight="800.0" prefWidth="400.0" spacing="40.0">
+                     <children>
+                        <Label text="&quot;Quickness&quot;">
+                           <font>
+                              <Font name="System Bold Italic" size="44.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/potion3.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="NOT AVAILABLE YET">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label text="">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</HBox>

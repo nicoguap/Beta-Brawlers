@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:controller="Cont.BetaBrawlerStartScene" fx:id="stackP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdb79e" height="800.0" stroke="BLACK" strokeType="INSIDE" width="1200.0" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="120.0" StackPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="118.0" prefWidth="872.0" text="Beta Brawlers">
+               <font>
+                  <Font name="Calibri Bold Italic" size="96.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" text="Click here for the store                     Click here to enter game">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane onMouseClicked="#mouseClickedOnStartSceneShop" prefHeight="800.0" prefWidth="600.0" />
+            <Pane onMouseClicked="#mouseClickedOnStartSceneGame" prefHeight="800.0" prefWidth="600.0" />
+         </children>
+      </HBox>
+   </children>
+</StackPane>
